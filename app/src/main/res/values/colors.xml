@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#99ccff</color>
+    <color name="green_white">#ccff99</color>
+    <color name="green_green">#00cc99</color>
+    <color name="thanh_thanh">#2F7D87</color>
+
+    <!-- bootstrap 4 background color-->
+    <color name="bg_primary">#007bff</color>
+    <color name="bg_secondary">#6c757d</color>
+    <color name="bg_success">#28a745</color>
+    <color name="bg_danger">#dc3545</color>
+    <color name="bg_warning">#ffc107</color>
+    <color name="bg_info">#17a2b8</color>
+    <color name="bg_light">#f8f9fa</color>
+    <color name="bg_dark">#343a40</color>
+</resources>
