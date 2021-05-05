@@ -14,8 +14,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.example.tieuluan.Home.Home;
 import com.example.tieuluan.R;
+import com.example.tieuluan.waether.Weather_Home;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -23,8 +23,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.io.File;
 
 public class logout extends AppCompatActivity {
 
@@ -94,15 +92,12 @@ public class logout extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.home_bottom_home:
-                    startActivity(new Intent(logout.this, Home.class));
+                    startActivity(new Intent(logout.this, Weather_Home.class));
                     overridePendingTransition(0,0);
                     finish();
                     return true;
 
                 case R.id.home_bottom_info:
-                    startActivity(new Intent(logout.this, logout.class));
-                    overridePendingTransition(0,0);
-                    finish();
                     return true;
             }
 

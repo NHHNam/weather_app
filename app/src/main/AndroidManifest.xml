@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".logout.logout"></activity>
-        <activity android:name=".Home.Home"></activity>
+<!--        weather broadcast-->
+        <activity android:name=".waether.Weather_Home"></activity>
     </application>
 
 </manifest>
