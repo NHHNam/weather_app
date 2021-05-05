@@ -27,7 +27,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class logout extends AppCompatActivity {
 
     ImageView img;
-    private TextView name, email, id;
+    private TextView name, email;
     private Button sign_out;
     private GoogleSignInClient mGoogleSignInClient;
 
@@ -46,7 +46,6 @@ public class logout extends AppCompatActivity {
         img = findViewById(R.id.imgae_person);
         name = findViewById(R.id.name_person);
         email = findViewById(R.id.email);
-        id = findViewById(R.id.id_person);
         sign_out = findViewById(R.id.button_sign_out);
         sign_out.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,12 +62,10 @@ public class logout extends AppCompatActivity {
         if (acct != null) {
             String personName = acct.getDisplayName();
             String personEmail = acct.getEmail();
-            String personId = acct.getId();
             Uri personPhoto = acct.getPhotoUrl();
 
-            name.setText(personName);
-            email.setText(personEmail);
-            id.setText(personId);
+            name.setText("Tên người dùng: " + String.valueOf(personName));
+            email.setText("Email: " + String.valueOf(personEmail));
             Glide.with(logout.this).load(String.valueOf(personPhoto)).into(img);
         }
     }

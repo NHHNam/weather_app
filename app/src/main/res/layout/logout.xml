@@ -4,34 +4,30 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:layout_marginTop="50dp">
 
     <ImageView
         android:id="@+id/imgae_person"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
     <TextView
-        android:textSize="15sp"
+        android:textSize="25sp"
         android:textColor="@color/black"
         android:id="@+id/name_person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView
-        android:textSize="15sp"
+        android:textSize="25sp"
         android:textColor="@color/black"
         android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        android:id="@+id/id_person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/button_sign_out"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_blue"
         android:text="signout"/>
 
     <LinearLayout

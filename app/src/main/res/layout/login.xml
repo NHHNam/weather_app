@@ -5,7 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login.login"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Welcome back,"
+    android:textSize="24sp"
+    android:textColor="@color/bg_info"
+    android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In!"
+        android:textSize="48sp"
+        android:textColor="@color/bg_info"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"/>
 
     <com.google.android.gms.common.SignInButton
         android:layout_gravity="center"
